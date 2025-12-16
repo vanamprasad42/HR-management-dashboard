@@ -1,0 +1,14 @@
+<div class="app-container" [class.sidebar-collapsed]="isSidebarCollapsed">
+    <div class="sidebar-overlay" *ngIf="isSidebarCollapsed && isMobile" (click)="toggleSidebar()"></div>
+    <app-sidebar [isCollapsed]="isSidebarCollapsed" (toggleSidebar)="toggleSidebar()"></app-sidebar>
+
+    <div class="main-content">
+        <app-navbar (toggleSidebar)="toggleSidebar()"></app-navbar>
+
+        <div class="content-wrapper">
+            <router-outlet></router-outlet>
+        </div>
+
+        <app-footer></app-footer>
+    </div>
+</div>
