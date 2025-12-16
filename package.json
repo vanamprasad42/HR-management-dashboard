@@ -1,6 +1,21 @@
 {
   "name": "hr-management-dashboard",
   "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  }
+},
+{
+  "name": "hr-management-dashboard",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
